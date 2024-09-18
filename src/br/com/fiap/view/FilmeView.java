@@ -32,7 +32,7 @@ public class FilmeView{
             System.out.println(filmeController.excluirFilme(codigo));
             break;
           case 3:
-            System.out.println(filmeController.listarTodosFilmes());
+            JOptionPane.showMessageDialog(null,filmeController.listarTodosFilmes());
             break;
           default:
             System.out.println("Opção inválida");
