@@ -56,7 +56,7 @@ public class FilmeDAO{
   public String excluir(Filme filme){
     String sql = "delete from ddd_filme where codigo = ?";
     try (PreparedStatement ps = getCon().prepareStatement(sql);){
-      ps.setString(1, filme.getCodigo());
+      ps.setInt(1, filme.getCodigo());
       if(ps.excuteUpdate() > 0) {
         return "Excluido com sucesso";
       }else{
