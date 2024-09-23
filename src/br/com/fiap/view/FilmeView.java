@@ -41,6 +41,6 @@ public class FilmeView{
         System.out.println("Erro: " + e.getMessage());
       }
     }while(JOptionPane.showConfirmDialog(null, "Deseja continuar ?", "Atenção", JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE) == 0);
-    JOptionPane.showMessageDialog(null, "Fim do programa")
+    JOptionPane.showMessageDialog(null, "Fim do programa");
   }
 }
