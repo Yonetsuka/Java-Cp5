@@ -3,6 +3,8 @@ package br.com.fiap.controller;
 import br.com.fiap.model.dao.ConnectionFactory;
 import br.com.fiap.model.dao.FilmeDAO;
 import br.com.fiap.model.dto.Filme;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class FilmeController{
   public String inserirFilme(String titulo, String genero, String produtora)
