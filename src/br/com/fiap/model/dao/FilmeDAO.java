@@ -81,7 +81,7 @@ public class FilmeDAO{
         }
         return listaFilme;
       }else{
-        return null
+        return null;
       }
     }catch(SQLException e){
       System.out.println("Erro de SQL: " + e.getMessage());
