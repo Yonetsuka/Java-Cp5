@@ -16,7 +16,7 @@ public class FilmeController{
     filme.setGenero(genero);
     filme.setProdutora(produtora);
     FilmeDAO filmeDAO = new FilmeDAO(con);
-    resultado = filmeDAO.inserir(medico);
+    resultado = filmeDAO.inserir(filme);
     ConnectionFactory.fecharConexao(con);
     return resultado;
   }
@@ -31,7 +31,7 @@ public class FilmeController{
     filme.setGenero(genero);
     filme.setProdutora(produtora);
     FilmeDAO filmeDAO = new FilmeDAO(con);
-    resultado = filmeDAO.alterar(medico);
+    resultado = filmeDAO.alterar(filme);
     ConnectionFactory.fecharConexao(con);
     return resultado;
   }
@@ -48,7 +48,7 @@ public class FilmeController{
     return resultado;
   }
 
-  public String listarTodosFilmes()
+  public ArrayList<Filme> listarTodosFilmes()
   throws ClassNotFoundException, SQLException{
     Connection con = ConnectionFactory.abrirConexao();
     FilmeDAO filmeDAO = new FilmeDAO(con);
