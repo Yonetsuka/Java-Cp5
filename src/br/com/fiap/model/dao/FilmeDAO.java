@@ -67,7 +67,7 @@ public class FilmeDAO{
   }
 
   public ArrayList<Filme> listarTodos(){
-    String sql = "select * from ddd_carro order by placa";
+    String sql = "select * from ddd_filme order by codigo";
     ArrayList<Filme> listaFilme = new ArrayList<Filme>();
     try (PreparedStatement ps = getCon().prepareStatement(sql);ResultSet rs = ps.executeQuery();){
       if(rs != null){
